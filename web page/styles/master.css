@@ -11,10 +11,6 @@ p {
 
 .flex-container {
   display: flex;
- padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
   max-width: 250px;
   flex-flow: row wrap;
   

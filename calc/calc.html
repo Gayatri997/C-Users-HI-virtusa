@@ -2,12 +2,7 @@
 <html>
     <head>
         <title>Calculator</title>
-        <style>
-        body
-        {
-          background-color: brown;
-        }
-          </style>
+       
     </head>
     <body>
         <div id='calc-contain'>
@@ -16,6 +11,7 @@
             
             <input type="text" name="answer" />
             <br>
+               <input type="text" name="result" />
             
             <input type="button" value=" 1 " onclick="calculator.answer.value += '1'" />
             <input type="button" value=" 2 " onclick="calculator.answer.value += '2'" />
@@ -37,7 +33,7 @@
         
             <input type="button" value=" c " onclick="calculator.answer.value = ''" />
             <input type="button" value=" 0 " onclick="calculator.answer.value += '0'" />
-            <input type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)" />
+            <input type="button" value=" = " onclick="calculator.result.value = eval(calculator.answer.value)"  onblur="calculator.result.value=''" />
             <input type="button" value=" / " onclick="calculator.answer.value += '/'" />
             </br>
   
